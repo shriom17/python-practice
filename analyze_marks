@@ -1,0 +1,18 @@
+import numpy as np
+
+def analyze_marks(marks):
+    avg = np.mean(marks)
+    print("Average:", avg)
+
+    print("Highest:", np.max(marks))
+
+    above_75 = np.sum(marks > 75)
+    print("Above 75:", above_75)
+
+    passed = marks[marks >= 40]
+    print("Passed:", passed)
+
+
+marks = np.array([85, 32, 90, 65, 78, 25, 95])
+
+analyze_marks(marks)
